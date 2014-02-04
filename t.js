@@ -1,3 +1,6 @@
+/* Copyright (C) 2014 Kilobit */
+/* This software is released under the GPLv3 see LICENSE */
+
 /* t.js */
 
 var fs = require("fs");
