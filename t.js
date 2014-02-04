@@ -1,25 +1,8 @@
+/* t.js */
+
 var fs = require("fs");
 var lxml = require("libxmljs");
 var assert = require("assert");
-
-console.log("Hello World!");
-
-// fs.readFile("index.html", "utf-8", function(err, data) {
-// 
-//     if(err) {console.log(err); return err;}
-// 
-//     html = lxml.parseHtml(data);
-//     assert.equal('html', html.root().name());
-// 
-//     for(var p in html.root()) {
-// 
-// 	console.log(p + ": " + html.root()[p]);
-// 
-//     }
-// 
-// });
-
-
 
 function templateFactory(filename, mogrifyer, handler) {
 
@@ -49,7 +32,6 @@ var consolehandler = function(result) {
 var entitle = function(html, data) {
 
     var title = data.title || 'The Title';
-    console.log(data.title);
 
     var tnode = html.get("head/title");
 
